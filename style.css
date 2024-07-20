@@ -15,11 +15,28 @@ body {
 }
 
 #header{
+    position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(images/background4.png);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Hide mobile video by default */
+#bg-video-mobile {
+    display: none;
 }
 
 #container{
@@ -358,9 +375,15 @@ nav.fas{
 }
 
 @media only screen and (max-width:600px){
-    #header{
-        background-image: url(images/mobile.png);
+
+    #bg-video-desktop {
+        display: none;
     }
+
+    #bg-video-mobile {
+        display: block;
+    }
+
     .header-text{
         margin-top: 100%;
         font-size: 16px;
