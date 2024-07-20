@@ -4,13 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Portfolio WEbsite - Nuwani Sithara</title>
+        <title>Portfolio Website - Nuwani Sithara</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/11f9238822.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
      <div id="header">
+        <video autoplay muted loop id="bg-video-desktop" class="bg-video">
+            <source src="images/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Mobile Video -->
+        <video autoplay muted loop id="bg-video-mobile" class="bg-video">
+            <source src="images/mvideo3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="container">
             <nav>
                 <img src="images/logo4.png" class="logo">
@@ -56,27 +65,56 @@
                     </p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
 
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li><br>
-                            <li><span>Web Development</span><br>Web App Development</li><br>
-                            <li><span>Mobile App Development</span><br>Building Android/ios Applications</li>
+                            <li><span> Programming Languages</span><br> Java  Python JavaScript Kotlin C C++ R</li><br>
+                            <li><span> Web Development</span><br> Html CSS PHP ReactJs Postman</li><br>
+                            <li><span> Database</span><br> MySQL  MongoDB  SQLight</li><br>
+                            <li><span>  Tools</span><br>  Visual Studio Code   GitHub    Pycharm
+                                Android Studio   draw.io  figma</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2022 - Current</span><br>Sri Lankan Institute of Information Technology | SLIIT</li><br>
+                            <li><span>Software Development Group Project</span><br>Sri Lankan Institute of Information Technology | SLIIT Implementing a Tour Traveling system for the traveling
+                                company called ‘Deepthi Travels’. We used MERN Stack
+                                model for implementing the project. Frontend was 
+                               developed using reactJs.<br>
+                                Utilized: MongoDB, ExpressJs, ReactJs, NodeJs</li><br>
+                            <li><span> Online Examination System</span><br> Implementing a system for online examinations using JAVA
+                                    servlet. Students and teachers are the target of our project<br>
+                                    Utilized: JAVA, mySQL, Html</li><br>
+                            <li><span> Web application for automative parking system</span><br>  Implementing a web application for Automative Parking
+                                System.<br>
+                                Utilized: Html, CSS, JavaScript, </li><br>
+                            <li><span> Math Mastermind</span><br>  Implementing a mobile game application called 
+                                    ‘Math Mastermind’<br>
+                                     Utilized: Android Studio(Kotlin)</li><br>
+                            
                             
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2022 - Current</span><br>Sri Lankan Institute of Information Technology | SLIIT</li><br>
+                            BSc (Hons) on Information Technology Specializing in
+                            Software Engineering - Sri Lankan Institute of
+                            Information  Technology(SLIIT) in collaboration with
+                            LJMU (Liverpool John Moores University) in, UK<br><br>
+                            <li><span> 2011 - 2021</span><br> Sujatha Vidyalaya Matara</li><br>
+                            2021-GCE Advanced Level Examination 
+                            Passed  (Maths stream | Local) I Combined <br>
+                            Mathematics - C | Chemistry – S |Physics – S<br>
+                            2018 - GCE Ordinary Level Examination
+                            (Local) passed.<br><br>
+                            <li><span> 2008 - 2010</span><br>Palatuwa Gunarathana 
+                                Central Collage</li><br>
+                            
                         </ul>
                     </div>
                 </div>
@@ -94,28 +132,24 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Software Development</h2>
-                    <p>Implementing a Tour Traveling system for the traveling
-                        company called 'Deepthi Travels'. We used MERN Stack
-                        model for implementing the project. Frontend was
-                        developed using reactJs.
-                        Utilized: MongoDB, ExpressJs, ReactJs, NodeJs</p>
+                    <p>Implementing software web applications for online parking system,
+                        tour car system and online examination system<br>
+                        Utilized: MongoDB, ExpressJs, ReactJs, NodeJs, Html, Css, Java</p>
                         <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
-                    <h2>WEb Application</h2>
-                    <p>Implementing a web application for Automative Parking
-                        System.
-                        Utilized: Html, CSS, JavaScript,
+                    <h2>UI/ UX designing</h2>
+                    <p>Designing User interfaces for web applications and mobile applications.<br>
+                        Utilized: figma, Android Studio
                         </p>
                         <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>Mobile Application</h2>
-                    <p>Implementing a mobile game application called
-                        'Math Mastermind'
-                        Utilized: Android Studio(Kotlin)
+                    <p>Implementing a mobile game applications and task management application.<br>
+                        Utilized: Android Studio(Kotlin), SQLight
                         </p>
                         <a href="#">Learn more</a>
                 </div>
@@ -134,7 +168,7 @@
                 <div class="work">
                     <img src="images/portfolio4.jpg">
                     <div class="layer">
-                        <h3>Web Application for 'Deepthi Travels'</h3>
+                        <h3>Web Application</h3>
                         <p>This web application made for online tour company called
                             'Deepthi Travels'.
                         </p>
@@ -160,9 +194,19 @@
                         </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                </div>              
+                </div>
+                <div class="work">
+                    <img src="images/portfolio2.jpg">
+                    <div class="layer">
+                        <h3>Mobile Application</h3>
+                        <p>This is addition game application called 'Math-Mastermind' create
+                            using by kotlin language.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>               
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="https://github.com/nuwani-sithara" class="btn">See more</a>
         </div>
      </div>
 
